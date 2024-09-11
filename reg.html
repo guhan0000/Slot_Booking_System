@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="reg_style.css">
+    <style>
+        .required:after {
+    content:"*";
+    font-weight: normal;
+    color: red;}
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h2>Register</h2>
+        
+        <form action="register.php" method="post">
+           <label for="" class="required">Card number</label>
+            <input type="text" name="cno" required>
+            <br><br>
+            <label for="" class="required">Name &nbsp;</label>
+            <input type="text" name="name" required>
+            <br><br>
+            <label for="" class="required">Mobile number</label>
+            <input type="tel" name="mob" required>
+            <br><br>
+            <label for="">Address Line1</label>
+            <input type="text" name="Add1" placeholder="Door number">
+            <br><br>
+            <label for="">Address Line2</label>
+            <input type="text" name="Add2" placeholder="city/village">
+            <br><br>
+            <div class="form-group col-md-4">
+                <label for="inputDist" class="required">District</label>
+                <select class="form-control" name="inputDist" id="inputDist" required>
+                                    <option value="SelectDist">Select District</option>
+                                    <option value="Ariyalur">Ariyalur</option>
+                                    <option value="Chengalpattu">Chengalpattu</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Cuddalore">Cuddalore</option>
+                                    <option value="Dharmapuri">Dharmapuri</option>
+                                    <option value="Dindigul">Dindigul</option>
+                                    <option value="Erode">Erode</option>
+                                    <option value="Kallakurichi">Kallakurichi</option>
+                                    <option value="Kancheepuram">Kancheepuram</option>
+                                    <option value="Kanyakumari">Kanyakumari</option>
+                                    <option value="Karur">Karur</option>
+                                    <option value="Krishnagiri">Krishnagiri</option>
+                                    <option value="Madurai">Madurai</option>
+                                    <option value="Mayiladudhurai">Mayiladudhurai</option>
+                                    <option value="Nagapattinam">Nagapattinam</option>
+                                    <option value="Namakkal">Namakkal</option>
+                                    <option value="Nilgiris">Nilgiris</option>
+                                    <option value="Perambalur">Perambalur</option>
+                                    <option value="Pudukkottai">Pudukkottai</option>
+                                    <option value="Ramanathapuram">Ramanathapuram</option>
+                                    <option value="Ranipet">Ranipet</option>
+                                    <option value="Salem">Salem</option>
+                                    <option value="Sivagangai">Sivagangai</option>
+                                    <option value="Tenkasi">Tenkasi</option>
+                                    <option value="Thanjavur">Thanjavur</option>
+                                    <option value="Theni">Theni</option>
+                                    <option value="Thiruchirappalli">Thiruchirappalli</option>
+                                    <option value="Thirupathhur">Thirupathhur</option>
+                                    <option value="Thiruvarur">Thiruvarur</option>
+                                    <option value="Thoothukudi">Thoothukudi</option>
+                                    <option value="Thirunelveli">Thirunelveli</option>
+                                    <option value="Tiruppur">Tiruppur</option>
+                                    <option value="Tiruvallur">Tiruvallur</option>
+                                    <option value="Thiruvannamalai">Thiruvannamalai</option>
+                                    <option value="Vellore">Vellore</option>
+                                    <option value="Viluppuram">Viluppuram</option>
+                                    <option value="Virudhunagar">Virudhunagar</option>
+                </select>
+              </div>
+            
+            <br>
+            <div class="form-group col-md-4">
+                <label for="inputThaluk" class="required">Taluk</label>
+                <select class="form-control" name="inputThaluk" id="inputThaluk" required>
+                    <option value="">-- select Taluk -- </option>
+                </select>
+              </div>
+            <br>
+            <label for="" class="required">Pincode</label>
+            <input type="text" name="pin" required maxlength="6">
+            <br>
+            <label for="" class="required">Email</label>
+            <input type="email" name="email" required>
+            <br>
+            <label for="" class="required">Password</label>
+            <input type="password" name="pass" required>
+            <br>
+          
+            <br>
+            <div class="buttons">
+                <input id="clear" type="RESET" value="CLEAR"><button>SIGN UP</button>
+           
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="thaluk.js"></script>
+    
+</body>
+</html>
